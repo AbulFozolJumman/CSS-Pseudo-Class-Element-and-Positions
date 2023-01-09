@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Class, Element</title>
+    <style>
+        /* 1(CSS Pseudo Class on Hover, Focus and Visited) */
+        h1:hover{
+            font-size: 100px;
+            color: aqua;
+            background: magenta;
+        }
+        input:focus{
+            font-size: 30px;
+            font-weight: 700;
+            color: gold;
+        }
+        a:visited{
+            color: brown;
+        }
+        /* 2(Pseudo First child, Last child, nth child and Pseudo element before and after) */
+        li:first-child {
+            color: chocolate;
+        }
+
+        li:last-child {
+            background-color: cornflowerblue;
+        }
+
+        li:nth-child(2n) {
+            color: crimson;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: darkgray;
+        }
+
+        h3::before {
+            content: 'Hello ';
+        }
+
+        .special::after {
+            content: ' gelo';
+            background-color: darkkhaki;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1(CSS Pseudo Class on Hover, Focus and Visited) -->
+        <h1>Hover Effect</h1>
+        <br>
+        <input type="text" placeholder="Focus">
+        <br><br>
+        <a href="https://www.google.com/">Search in Google</a>
+        <a href="https://www.facebook.com/">Browse Facebook</a>
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjKnOb_lrv8AhXM4TgGHdieAdIQFnoECAsQAQ&url=https%3A%2F%2Fwww.underconsideration.com%2Fbrandnew%2F&usg=AOvVaw3Bqg04kezG2r7CngpHh-50">Visit Me</a>
+        <br>
+    <!-- 2(Pseudo First child, Last child, nth child and Pseudo element before and after) -->
+    <h3>middle size header -1</h3>
+    <h3 class="special">middle size header -2</h3>
+    <h3>middle size header -3</h3>
+    <h3 class="special">middle size header -4</h3>
+    <h3 class="special">middle size header -5</h3>
+    <h3>middle size header -6</h3>
+    <ul>
+        <li>Alia</li>
+        <li>Dalia</li>
+        <li>Kalia</li>
+        <li>Calia</li>
+        <li>Jalai</li>
+        <li>Charaia</li>
+        <li>maria</li>
+        <li>faria</li>
+        <li>jaria</li>
+    </ul>
+
+</body>
+</html>
